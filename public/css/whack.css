@@ -5,10 +5,102 @@ body {
     background: -moz-linear-gradient(#3D9970, #2ECC40); /* For Firefox 3.6 to 15 */
     background: linear-gradient(#3D9970, #2ECC40); /* Standard syntax */
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #3D9970;
+    font-family: 'Alegreya Sans', sans-serif;
 }
 
-img {
-    display: none;
-    width: 12.5rem;
-    padding: 1rem 0 0 1rem;
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Alegreya Sans', sans-serif;
 }
+
+h1 {
+    font-weight: 900;
+    /*font-style: italic;*/
+}
+
+h4 {
+    font-weight: 900;
+}
+
+.normal {
+    font-weight: 400;
+}
+
+.emph {
+    font-style: italic;
+}
+
+.letter-space-one {
+    letter-spacing: 0.0625rem;
+}
+
+.pad-top {
+    margin-top: 1.5rem;
+}
+
+.pad-right {
+    padding-right: 1rem;
+}
+
+.pad-bottom {
+    margin-bottom: 0.5rem;
+}
+
+.pad-left {
+    margin-left: 1rem;
+}
+
+.negative-top {
+    margin-top: -0.75rem;
+}
+
+.negative-top-more {
+    margin-top: -2.5rem;
+}
+
+.mole {
+    z-index: 100;
+    position: absolute;
+    left: 0;
+}
+
+.invisible {
+    display: none;
+}
+
+ul {
+    overflow: hidden;
+}
+
+li {
+    position: relative;
+}
+
+/*img {
+    position:absolute;
+    top: 0;
+    left: 0;
+}*/
+
+/*li {
+    background-image: url(/img/trans.png), url(/img/mole-400.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: contain, contain;
+}*/
+
+.container {
+    margin-top: 2rem;
+}
+
+.grid-border {
+    border-top: 0.0625rem solid #01FF70;
+    border-top: 0.0625rem solid rgba(1,255,112,0.4);
+    border-bottom: 0.0625rem solid #01FF70;
+    border-bottom: 0.0625rem solid rgba(1,255,112,0.4);
+    background: rgba(1,255,112,0.1);
+}
+
+
+
