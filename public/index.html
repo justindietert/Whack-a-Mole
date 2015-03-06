@@ -24,56 +24,71 @@
     <script src="/js/vendor/modernizr.js"></script>
 </head>
 <body>
-    <div class="row container">
-        <div class="small-11 small-centered columns">
-            <div class="small-5 columns">
+        <div class="row container">
+            <div class="small-12 columns">
                 <h1>Whack-a-Mole<span class="emph">!</span></h1>
                 <h4 class="emph normal">Click the moles to gain points.</h4>
-                <h4 class="letter-space-one">Score: </h4>
-            </div>
-
-            <div class="small-7 columns">
-                <ul class="small-block-grid-3 grid-border">
-                    <li class="tile">
-                        <img class="mole invisible pad-top" src="/img/mole-400.png" alt="mole">
-                        <img class="trans" src="/img/trans.png" alt="trans">
-                    </li>
-                    <li class="tile">
-                        <img class="mole invisible pad-top" src="/img/mole-400.png" alt="mole">
-                        <img class="trans" src="/img/trans.png" alt="trans">
-                    </li>
-                    <li class="tile">
-                        <img class="mole invisible pad-top" src="/img/mole-400.png" alt="mole">
-                        <img class="trans" src="/img/trans.png" alt="trans">
-                    </li>
-                    <li class="tile">
-                        <img class="mole invisible negative-top" src="/img/mole-400.png" alt="mole">
-                        <img class="trans" src="/img/trans.png" alt="trans">
-                    </li>
-                    <li class="tile">
-                        <img class="mole invisible negative-top" src="/img/mole-400.png" alt="mole">
-                        <img class="trans" src="/img/trans.png" alt="trans">
-                    </li>
-                    <li class="tile">
-                        <img class="mole invisible negative-top" src="/img/mole-400.png" alt="mole">
-                        <img class="trans" src="/img/trans.png" alt="trans">
-                    </li>
-                    <li class="tile">
-                        <img class="mole invisible negative-top-more" src="/img/mole-400.png" alt="mole">
-                        <img class="trans" src="/img/trans.png" alt="trans">
-                    </li>
-                    <li class="tile">
-                        <img class="mole invisible negative-top-more" src="/img/mole-400.png" alt="mole">
-                        <img class="trans" src="/img/trans.png" alt="trans">
-                    </li>
-                    <li class="tile">
-                        <img class="mole invisible negative-top-more" src="/img/mole-400.png" alt="mole">
-                        <img class="trans" src="/img/trans.png" alt="trans">
-                    </li>
-                </ul>
+                <h3 class="letter-space-one score">Score: </h3>
             </div>
         </div>
-    </div>
+
+        <div class="row game-board">
+            <div class="small-12 columns">
+                <div class="row">
+                    <div class="small-4 columns">
+                        <div class="hole">
+                            <div class="mole"></div>
+                        </div> 
+                    </div>
+                    <div class="small-4 columns">
+                        <div class="hole">
+                            <div class="mole"></div>
+                        </div> 
+                    </div>
+                    <div class="small-4 columns">
+                        <div class="hole">
+                            <div class="mole"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row middle">
+                    <div class="small-4 columns">
+                        <div class="hole">
+                            <div class="mole"></div>
+                        </div>
+                    </div>
+                    <div class="small-4 columns">
+                        <div class="hole">
+                            <div class="mole"></div>
+                        </div>
+                    </div>
+                    <div class="small-4 columns">
+                        <div class="hole">
+                            <div class="mole"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row bottom">
+                    <div class="small-4 columns">
+                        <div class="hole">
+                            <div class="mole"></div>
+                        </div>
+                    </div>
+                    <div class="small-4 columns">
+                        <div class="hole">
+                            <div class="mole"></div>
+                        </div>
+                    </div>
+                    <div class="small-4 columns">
+                        <div class="hole">
+                            <div class="mole"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
@@ -90,6 +105,7 @@
 
 
 <script src="/js/vendor/jquery.js"></script>
+<script src="/js/vendor/jquery-ui.min.js"></script>
 <script src="/js/foundation.min.js"></script>
 <script>
     $(document).foundation();

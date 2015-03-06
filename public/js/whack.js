@@ -6,10 +6,10 @@ $(document).ready(function() {
         var moles = $('.mole');
         var randomMole = moles[random];
 
-        $(randomMole).removeClass('invisible');
+        $(randomMole).show('slide', {direction: 'down'}, 400);
 
         setTimeout(function(){
-            $(randomMole).addClass('invisible');
+            $(randomMole).hide('slide', {direction: 'down'}, 400);
         }, 1000);
     }
 
