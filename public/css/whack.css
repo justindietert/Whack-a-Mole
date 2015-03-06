@@ -40,6 +40,15 @@ h4, h3 {
     color: #01FF70;
 }
 
+#timer {
+  text-align: right;
+  float: right;
+}
+
+#seconds {
+  font-weight: 300;
+}
+
 .row {
     max-width: 40rem;
 }
@@ -193,8 +202,19 @@ button.tiny, .button.tiny {
     font-size: 0.8125rem; 
 }
 
+.whack {
+  color: #222222;
+  border-color: #222222;
+}
+
+.whack:hover {
+  color: #222222;
+  cursor: default;
+}
+
 #start {
     margin-top: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .button.right {
@@ -203,4 +223,11 @@ button.tiny, .button.tiny {
 
 .relative {
     position: relative;
+}
+
+.absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 0.9375rem;
 }

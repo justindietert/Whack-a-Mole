@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>:: WHACK ::</title>
+    <title>:: Whack-a-Mole! ::</title>
 
     <!-- Normalize CSS -->
     <link rel="stylesheet" href="/css/normalize.css" />
@@ -25,14 +25,18 @@
 </head>
 <body>
         <div class="row container">
-            <div class="small-10 columns">
+            <div class="small-12 columns">
                 <h1>Whack-a-Mole<span class="emph">!</span></h1>
+
+            <!-- <div class="small-2 columns absolute"> -->
+                <div id="start" class="button tiny absolute">Start</div>
+                <!-- <h4 class="right">Timer:&nbsp;<span id="timer" >__</span></h4> -->
+            <!-- </div> -->
+
                 <h4 class="emph normal">Click the moles to gain points.</h4>
-                <h3 class="letter-space-one score">Score: <span id="points">01234</span></h3>
+                <h3 class="letter-space-one score">Score: <span id="points"></span><span id="timer"><span id="seconds" >__</span>&nbsp;seconds left</span></h3>
             </div>
-            <div class="small-2 columns relative">
-                <div id="start" class="button tiny right">Start</div>
-            </div>
+            
         </div>
 
         <div class="row game-board">
@@ -111,16 +115,6 @@
         
     </div>
 </footer>
-
-
-
-
-
-<!--     <img class="mole" src="/img/mole-400.png" alt="mole">
-    <img class="mole" src="/img/mole-400.png" alt="mole">
-    <img class="mole" src="/img/mole-400.png" alt="mole">
-    <img class="mole" src="/img/mole-400.png" alt="mole">
-    <img class="mole" src="/img/mole-400.png" alt="mole"> -->
 
 
 
