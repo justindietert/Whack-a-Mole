@@ -143,3 +143,64 @@ hr {
   float: right;
 }
 
+.button {
+  font-family: 'Source Sans Pro', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-weight: normal;
+  line-height: normal;
+  margin: 0 0 1.25rem;
+  /*position: relative;*/
+  text-decoration: none;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  display: inline-block;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  padding-bottom: 1.0625rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  background-color: none;
+  background: none;
+  border-color: #2ECC40;
+  color: #2ECC40;
+  /*transition: #828286 300ms ease-out;*/
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+    /*background-color: rgba(130, 130, 134, 0.4);*/
+    color: #01FF70;
+}
+
+button.small, .button.small {
+    padding-top: 0.875rem;
+    padding-right: 1.75rem;
+    padding-bottom: 0.9375rem;
+    padding-left: 1.75rem;
+    font-size: 0.8125rem; 
+}
+
+button.tiny, .button.tiny {
+    padding-top: 0.625rem;
+    padding-right: 1.25rem;
+    padding-bottom: 0.6875rem;
+    padding-left: 1.25rem;
+    font-size: 0.8125rem; 
+}
+
+#start {
+    margin-top: 1rem;
+}
+
+.button.right {
+    float: right;
+}
+
+.relative {
+    position: relative;
+}
