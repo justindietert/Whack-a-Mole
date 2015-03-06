@@ -1,24 +1,30 @@
+(function() {
 
-$(document).ready(function() {
+    'use strict';
 
-    function animateRandomMole() {
-        var random = Math.floor(Math.random() * 9);
-        var moles = $('.mole');
-        var randomMole = moles[random];
+    $(document).ready(function() {
 
-        $(randomMole).show('slide', {direction: 'down'}, 400);
+        function animateRandomMole() {
+            var random = Math.floor(Math.random() * 9);
+            var moles = $('.mole');
+            var randomMole = moles[random];
 
-        setTimeout(function(){
-            $(randomMole).hide('slide', {direction: 'down'}, 400);
-        }, 1000);
-    }
+            $(randomMole).show('slide', {direction: 'down'}, 400);
 
-    animateRandomMole();
+            setTimeout(function(){
+                $(randomMole).hide('slide', {direction: 'down'}, 200);
+            }, 1000);
+        }
 
-    // $('.mole').fadeIn(250);
+        animateRandomMole();
 
-    // $('.mole').on('click', function(){
-    //     $(this).fadeOut(250);
-    // });
+        // $('.mole').fadeIn(250);
 
-});
+        // $('.mole').on('click', function(){
+        //     $(this).fadeOut(250);
+        // });
+
+    });
+
+
+})();

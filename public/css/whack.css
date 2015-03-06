@@ -9,6 +9,12 @@ body {
     background-attachment: fixed;
     background-color: #3D9970;
     font-family: 'Alegreya Sans', sans-serif;
+    -webkit-user-select: none; /* Chrome/Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+ */
+    /*below not yet implemented in browsers*/
+    -o-user-select: none;
+    user-select: none;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -28,8 +34,19 @@ h4, h3 {
     padding-top: 0.125rem;
 }
 
+#points {
+    font-weight: 300;
+    /*letter-spacing: 0;*/
+    color: #01FF70;
+}
+
 .row {
     max-width: 40rem;
+}
+
+.bottom-row {
+  margin-bottom: 1.5rem;
+  /*margin-top: 1.25rem;*/
 }
 
 .normal {
@@ -69,11 +86,14 @@ h4, h3 {
     width: 100%;
     height: 5rem;
     border-radius: 50%;
-    background-image: url(/img/mole-fade.png);
+    background-image: url(/img/mole-fade-more.png);
     background-size: cover;
     position: absolute;
     top: -0.4rem;
     left: 0;
+   /* left: 50%;  
+    right: 50%;*/
+    /*margin-left: -50%; */  
     z-index: 100;
     display: none;
 }
@@ -90,9 +110,36 @@ h4, h3 {
 
 .game-board {
     padding-top: 1rem;
-    padding-bottom: 3rem;
+    padding-bottom: 7rem;
 }
 
+hr {
+    border: solid #42a679;
+    border-width: 0.0625rem 0 0;
+    clear: both;
+    margin: 1.25rem 0 1.1875rem;
+    height: 0; 
+}
 
+.footer-text {
+    /*font-weight: 200;*/
+    letter-spacing: 0.0125rem;
+    color: #33805d;
+    /*margin-top: 0.25rem;*/
+}
 
+.svg .jd-logo {
+  width: 2rem;
+  height: 2rem;
+  background: url('/img/jd-logo-green.svg') no-repeat top left;
+  background-size: contain;
+}
+
+.no-svg .jd-logo {
+  background: url('/img/jd-logo-green.png');
+}
+
+.float-right {
+  float: right;
+}
 
