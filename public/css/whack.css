@@ -86,7 +86,11 @@ h4, h3 {
 
 .lime {
     color: #01FF70;
-    transition: 2500ms ease-out;
+    transition: 1000ms ease-out;
+}
+
+.lime-text {
+    color: #01FF70;
 }
 
 .gray {
@@ -124,7 +128,7 @@ h4, h3 {
 }
 
 .mole:active {
-  background-image: url(/img/mole-fade-blood.png);
+  background-image: url(/img/mole-fade-hit.png);
 }
 
 .container {
@@ -239,7 +243,7 @@ button.tiny, .button.tiny {
 }
 
 .restart {
-    transition: 800ms ease-out;
+    transition: 600ms ease-out;
 }
 
 .restart-two {
@@ -264,4 +268,22 @@ button.tiny, .button.tiny {
 
 .hide-one {
   display: none;
+}
+
+.reveal-modal {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.close-reveal-modal {
+  color: #3D9970 !important;
+}
+
+.center-vertical {
+  position: relative;
+  top: 35%;
+  transform: translateY(-35%);
+  font-size: 4rem;
+  line-height: 4rem;
 }

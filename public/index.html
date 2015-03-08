@@ -29,7 +29,7 @@
                 <h1>Whack-a-Mole<span class="emph">!</span></h1>
 
             <!-- <div class="small-2 columns absolute"> -->
-                <div id="start" class="button tiny absolute">Start</div>
+                <div id="start" class="button tiny absolute restart">Start</div>
                 <!-- <h4 class="right">Timer:&nbsp;<span id="timer" >__</span></h4> -->
             <!-- </div> -->
 
@@ -97,7 +97,6 @@
             </div>
         </div>
 
-
 <footer class="row bottom-row">
     <div class="small-12 columns">
 
@@ -116,8 +115,31 @@
     </div>
 </footer>
 
+<div id="winModal" class="reveal-modal full text-center" data-reveal>
+  <h1 class="lime-text center-vertical">You win<span class="emph">!<br /><i class="fa fa-smile-o"></i></span></h1>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
 
+<div id="loseModal" class="reveal-modal full text-center" data-reveal>
+  <h1 class="lime-text center-vertical">You lose.<br /><i class="fa fa-meh-o"></i></h1>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
 
+<audio id="audio-one">
+    <source src="sound/funny_cartoon_jump.mp3"></source>
+</audio>
+
+<audio id="audio-two">
+    <source src="sound/cartoon_up.mp3"></source>
+</audio>
+
+<audio id="audio-win">
+    <source src="sound/small_crowd_says_yes.mp3"></source>
+</audio>
+
+<audio id="audio-lose">
+    <source src="sound/wizard_says_no.mp3"></source>
+</audio>
 
 <script src="/js/vendor/jquery.js"></script>
 <script src="/js/vendor/jquery-ui.min.js"></script>

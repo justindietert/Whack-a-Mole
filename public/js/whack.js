@@ -7,25 +7,43 @@
         var timer = 30;
         var score = 0;
 
+        var audioOne = $('#audio-one')[0];
+        var audioTwo = $('#audio-two')[0];
+        var audioWin = $('#audio-win')[0];
+        var audioLose = $('#audio-lose')[0];
+
+        function playAudioOne() {
+            audioOne.play();
+        }
+
+        function playAudioTwo() {
+            audioTwo.play();
+        }
+
+        function playAudioWin() {
+            audioWin.play();
+        }
+
+        function playAudioLose() {
+            audioLose.play();
+        }
+
         $('#start').on('click', startGame);
 
         function startGame(){
-            // $('#prompt').removeClass('lime');
             $('#timer').html('<span id="seconds" >__</span>&nbsp;second<span id="hide-one">s</span> left');
             $('#start').off('click', startGame).addClass('whack').html('Whack!');
-            $('#prompt').addClass('lime').html('Points to win: 30');
+            $('#prompt').addClass('lime').html('Points to win: 30 or more');
+
             setTimeout(function(){
                 $('#prompt').removeClass('lime');
             }, 1500);
-
-            // $('#prompt').animate({
-            //     color: '#222222'
-            // }, 3000);
 
             $('#points').html('');
             timer = 30;
             score = 0;
             animateBoard();
+            playAudioTwo();
         }
 
 
@@ -42,6 +60,7 @@
                 // $(this).effect('bounce');
                 score++;
                 $('#points').html(score);
+                playAudioOne();
             });
  
             setTimeout(function(){
@@ -62,6 +81,7 @@
                 // $(this).effect('bounce');
                 score++;
                 $('#points').html(score);
+                playAudioOne();
             });
  
             setTimeout(function(){
@@ -99,10 +119,20 @@
                     timer--;
                 } else {
                     clearInterval(intervalId);
-                    $('#timer').html('Game Over<span class="emph">!</span>');
+                    $('#timer').html('Time&rsquo;s up<span class="emph">!</span>');
                     $('#start').on('click', startGame);
                     $('#start').removeClass('whack').html('Start').addClass('restart');
                     $('#prompt').html('Click start to play again.');
+
+                    if (score >= 30) {
+                        // console.log ("you win");
+                        playAudioWin();
+                        $('#winModal').foundation('reveal', 'open');
+                    } else {
+                        // console.log('you lose');
+                        playAudioLose();
+                        $('#loseModal').foundation('reveal', 'open');
+                    }
 
                     // need to add high score feature
                 }
