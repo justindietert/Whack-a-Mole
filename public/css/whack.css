@@ -135,12 +135,6 @@ h4, h3 {
     padding-top: 2rem;
 }
 
-/*.grid-border {
-    border: 0.0625rem solid #01FF70;
-    border: 0.0625rem solid rgba(1,255,112,0.4);
-    background: rgba(1,255,112,0.1);
-}*/
-
 .game-board {
     padding-top: 1.25rem;
     padding-bottom: 7rem;

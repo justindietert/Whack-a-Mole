@@ -46,7 +46,6 @@
             playAudioTwo();
         }
 
-
         function animateRandomMoleOne() {
             var random = Math.floor(Math.random() * 9);
             var moles = $('.mole');
@@ -88,18 +87,6 @@
                 $(randomMole).hide('slide', {direction: 'down'}, 200);
             }, 800);      
         }
-
-        // function animateRandomMoleThree() {
-        //     var random = Math.floor(Math.random() * 9);
-        //     var moles = $('.mole');
-        //     var randomMole = moles[random];
-
-        //     $(randomMole).show('slide', {direction: 'down'}, 600).delay(900);
-
-        //     setTimeout(function(){
-        //         $(randomMole).hide('slide', {direction: 'down'}, 200);
-        //     }, 1000);
-        // }
 
         function animateBoard() {
             var intervalId = setInterval(function(){
