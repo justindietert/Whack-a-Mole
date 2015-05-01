@@ -277,3 +277,15 @@ button.tiny, .button.tiny {
   font-size: 4rem;
   line-height: 4rem;
 }
+
+@media only screen and (max-width: 23.4375em) {
+  .mole, 
+  .hole {
+    height: 3rem;
+  }
+
+  #start {
+    position: static;
+    margin-bottom: 1rem;
+  }
+}
