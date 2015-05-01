@@ -104,7 +104,6 @@ h4, h3 {
     border-radius: 50%;
     background: #222222;
     position: relative;
-    /*border-top: 0.25rem solid #001f3f;*/
 }
 
 .hole:hover {
@@ -119,10 +118,7 @@ h4, h3 {
     background-size: cover;
     position: absolute;
     top: -0.4rem;
-    left: 0;
-   /* left: 50%;  
-    right: 50%;*/
-    /*margin-left: -50%; */  
+    left: 0; 
     z-index: 100;
     display: none;
 }
