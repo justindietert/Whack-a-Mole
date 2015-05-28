@@ -51,20 +51,17 @@
             var moles = $('.mole');
             var randomMole = moles[random];
 
-            // console.log(random);
-
             $(randomMole).show('slide', {direction: 'down'}, 400);
 
             $(randomMole).off().one('mousedown', function(){
-                // $(this).effect('bounce');
                 score++;
                 $('#points').html(score);
                 playAudioOne();
             });
- 
+
             setTimeout(function(){
                 $(randomMole).hide('slide', {direction: 'down'}, 200);
-            }, 800);      
+            }, 800);
         }
 
         function animateRandomMoleTwo() {
@@ -72,20 +69,17 @@
             var moles = $('.mole');
             var randomMole = moles[random];
 
-            // console.log(random);
-
             $(randomMole).show('slide', {direction: 'down'}, 400).delay(1000);
 
             $(randomMole).off().one('mousedown', function(){
-                // $(this).effect('bounce');
                 score++;
                 $('#points').html(score);
                 playAudioOne();
             });
- 
+
             setTimeout(function(){
                 $(randomMole).hide('slide', {direction: 'down'}, 200);
-            }, 800);      
+            }, 800);
         }
 
         function animateBoard() {
@@ -94,7 +88,6 @@
 
                     animateRandomMoleOne();
                     animateRandomMoleTwo();
-                    // animateRandomMoleThree();
 
                     $('#seconds').html(timer);
                     if (timer == 1) {
@@ -112,16 +105,12 @@
                     $('#prompt').html('Click start to play again.');
 
                     if (score >= 30) {
-                        // console.log ("you win");
                         playAudioWin();
                         $('#winModal').foundation('reveal', 'open');
                     } else {
-                        // console.log('you lose');
                         playAudioLose();
                         $('#loseModal').foundation('reveal', 'open');
                     }
-
-                    // need to add high score feature
                 }
             }, 1000);
         }
