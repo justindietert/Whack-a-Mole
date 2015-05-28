@@ -24,119 +24,118 @@
     <script src="/js/vendor/modernizr.js"></script>
 </head>
 <body>
-        <div class="row container">
-            <div class="small-12 columns">
-                <h1>Whack-a-Mole<span class="emph">!</span></h1>
+    <div class="row container">
+        <div class="small-12 columns">
+            <h1>Whack-a-Mole<span class="emph">!</span></h1>
 
-                <div id="start" class="button tiny absolute restart">Start</div>
+            <div id="start" class="button tiny absolute restart">Start</div>
 
-                <h4 id="prompt" class="emph normal">Click start to begin.</h4>
-                <h3 class="letter-space-one score">Score: <span id="points"></span><span id="timer"><span id="seconds" >__</span>&nbsp;second<span id="hide-one">s</span> left</span></h3>
-            </div>
-
+            <h4 id="prompt" class="emph normal">Click start to begin.</h4>
+            <h3 class="letter-space-one score">Score: <span id="points"></span><span id="timer"><span id="seconds" >__</span>&nbsp;second<span id="hide-one">s</span> left</span></h3>
         </div>
-
-        <div class="row game-board">
-            <div class="small-12 columns">
-                <div class="row">
-                    <div class="small-4 columns">
-                        <div class="hole">
-                            <div class="mole"></div>
-                        </div>
-                    </div>
-                    <div class="small-4 columns">
-                        <div class="hole">
-                            <div class="mole"></div>
-                        </div>
-                    </div>
-                    <div class="small-4 columns">
-                        <div class="hole">
-                            <div class="mole"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row middle">
-                    <div class="small-4 columns">
-                        <div class="hole">
-                            <div class="mole"></div>
-                        </div>
-                    </div>
-                    <div class="small-4 columns">
-                        <div class="hole">
-                            <div class="mole"></div>
-                        </div>
-                    </div>
-                    <div class="small-4 columns">
-                        <div class="hole">
-                            <div class="mole"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row bottom">
-                    <div class="small-4 columns">
-                        <div class="hole">
-                            <div class="mole"></div>
-                        </div>
-                    </div>
-                    <div class="small-4 columns">
-                        <div class="hole">
-                            <div class="mole"></div>
-                        </div>
-                    </div>
-                    <div class="small-4 columns">
-                        <div class="hole">
-                            <div class="mole"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-<footer class="row bottom-row">
-    <div class="small-12 columns">
-
-        <hr/>
-
-        <div class="row">
-            <div class="small-10 columns">
-                <p class="footer-text">© Copyright 2015 Justin Dietert.</p>
-            </div>
-
-            <div class="small-2 columns">
-                <a href="#" class="jd-logo float-right"></a>
-            </div>
-        </div>
-
     </div>
-</footer>
 
-<div id="winModal" class="reveal-modal full text-center" data-reveal>
-  <h1 class="lime-text center-vertical">You win<span class="emph">!<br /><i class="fa fa-smile-o"></i></span></h1>
-  <a class="close-reveal-modal">&#215;</a>
-</div>
+    <div class="row game-board">
+        <div class="small-12 columns">
+            <div class="row">
+                <div class="small-4 columns">
+                    <div class="hole">
+                        <div class="mole"></div>
+                    </div>
+                </div>
+                <div class="small-4 columns">
+                    <div class="hole">
+                        <div class="mole"></div>
+                    </div>
+                </div>
+                <div class="small-4 columns">
+                    <div class="hole">
+                        <div class="mole"></div>
+                    </div>
+                </div>
+            </div>
 
-<div id="loseModal" class="reveal-modal full text-center" data-reveal>
-  <h1 class="lime-text center-vertical">You lose.<br /><i class="fa fa-meh-o"></i></h1>
-  <a class="close-reveal-modal">&#215;</a>
-</div>
+            <div class="row middle">
+                <div class="small-4 columns">
+                    <div class="hole">
+                        <div class="mole"></div>
+                    </div>
+                </div>
+                <div class="small-4 columns">
+                    <div class="hole">
+                        <div class="mole"></div>
+                    </div>
+                </div>
+                <div class="small-4 columns">
+                    <div class="hole">
+                        <div class="mole"></div>
+                    </div>
+                </div>
+            </div>
 
-<audio id="audio-one">
-    <source src="sound/funny_cartoon_jump.mp3"></source>
-</audio>
+            <div class="row bottom">
+                <div class="small-4 columns">
+                    <div class="hole">
+                        <div class="mole"></div>
+                    </div>
+                </div>
+                <div class="small-4 columns">
+                    <div class="hole">
+                        <div class="mole"></div>
+                    </div>
+                </div>
+                <div class="small-4 columns">
+                    <div class="hole">
+                        <div class="mole"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<audio id="audio-two">
-    <source src="sound/cartoon_up.mp3"></source>
-</audio>
+    <footer class="row bottom-row">
+        <div class="small-12 columns">
 
-<audio id="audio-win">
-    <source src="sound/small_crowd_says_yes.mp3"></source>
-</audio>
+            <hr/>
 
-<audio id="audio-lose">
-    <source src="sound/wizard_says_no.mp3"></source>
-</audio>
+            <div class="row">
+                <div class="small-10 columns">
+                    <p class="footer-text">© Copyright 2015 Justin Dietert.</p>
+                </div>
+
+                <div class="small-2 columns">
+                    <a href="#" class="jd-logo float-right"></a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <div id="winModal" class="reveal-modal full text-center" data-reveal>
+        <h1 class="lime-text center-vertical">You win<span class="emph">!<br /><i class="fa fa-smile-o"></i></span></h1>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+    <div id="loseModal" class="reveal-modal full text-center" data-reveal>
+        <h1 class="lime-text center-vertical">You lose.<br /><i class="fa fa-meh-o"></i></h1>
+        <a class="close-reveal-modal">&#215;</a>
+    </div>
+
+    <audio id="audio-one">
+        <source src="sound/funny_cartoon_jump.mp3"></source>
+    </audio>
+
+    <audio id="audio-two">
+        <source src="sound/cartoon_up.mp3"></source>
+    </audio>
+
+    <audio id="audio-win">
+        <source src="sound/small_crowd_says_yes.mp3"></source>
+    </audio>
+
+    <audio id="audio-lose">
+        <source src="sound/wizard_says_no.mp3"></source>
+    </audio>
 
 <script src="/js/vendor/jquery.js"></script>
 <script src="/js/vendor/jquery-ui.min.js"></script>
